@@ -3,7 +3,7 @@
 Este documento analiza afirmaciones sobre la herencia y los prototipos en JavaScript, determinando si son **Verdad** o **Mito** con sus respectivas justificaciones.
 
 ## 1. "El `prototype` de una función y el `__proto__` de un objeto son exactamente lo mismo."
-** Mito**
+**Mito**
 
  **Justificación:**
 - `prototype` es una propiedad de las funciones constructoras que define los métodos y propiedades que heredarán las instancias creadas con `new`.
@@ -15,7 +15,7 @@ Este documento analiza afirmaciones sobre la herencia y los prototipos en JavaSc
 ---
 
 ## 2. "La cadena de prototipos permite la reutilización de métodos y propiedades, lo cual es esencial para la herencia en JavaScript."
-** Verdad**
+ **Verdad**
 
  **Justificación:**
 - La cadena de prototipos permite que los objetos hereden métodos y propiedades de otros objetos.
@@ -26,7 +26,7 @@ Este documento analiza afirmaciones sobre la herencia y los prototipos en JavaSc
 ---
 
 ## 3. "Las funciones constructoras son obsoletas y no se usan en el desarrollo moderno de JavaScript."
-** Mito**
+**Mito**
 
  **Justificación:**
 - Aunque las clases (`class`) introducidas en ES6 proporcionan una sintaxis más clara, las funciones constructoras siguen siendo válidas.
@@ -38,7 +38,7 @@ Este documento analiza afirmaciones sobre la herencia y los prototipos en JavaSc
 ---
 
 ## 4. "Manipular correctamente `__proto__` puede mejorar la reutilización de código, pero su uso inadecuado puede generar problemas de seguridad y mantenimiento."
-** Verdad**
+**Verdad**
 
  **Justificación:**
 - `__proto__` permite modificar la cadena de prototipos en tiempo de ejecución, pero se recomienda evitarlo en producción.
@@ -50,7 +50,7 @@ Este documento analiza afirmaciones sobre la herencia y los prototipos en JavaSc
 ---
 
 ## 5. "Modificar el `prototype` de una función siempre afecta a todas las instancias existentes sin excepción."
-** Mito**
+**Mito**
 
  **Justificación:**
 - Modificar `prototype` de una función afecta a futuras instancias, pero **no a las ya creadas** si estas ya tienen su propia copia de la propiedad o método.
@@ -59,5 +59,5 @@ Este documento analiza afirmaciones sobre la herencia y los prototipos en JavaSc
 
 ---
 
-### 📌 Conclusión
-Este documento ha identificado mitos y verdades sobre la herencia en JavaScript. La comprensión adecuada del modelo de prototipos permite escribir código más eficiente y seguro. 🚀
+###  Conclusión
+ La comprensión adecuada del modelo de prototipos permite escribir código más eficiente y seguro. 
